@@ -11,7 +11,7 @@ const Title = styled.h1`
 //sukurti button komponenta, prideti jam stiliu ir panaudoti jsx
 
 const Btn = styled.button`
-  font-size: 2rem;
+  font-size: ${(props) => (props.sm ? '1rem' : '1.5rem')};
   padding: 1em 2em;
   border-radius: 20px;
   border: none;
@@ -29,6 +29,7 @@ function App() {
     <div className='App container'>
       <Title>React styled components</Title>
       <Btn>Mygtukas</Btn>
+      <Btn sm>Mygtukas mažas</Btn>
     </div>
   );
 }
