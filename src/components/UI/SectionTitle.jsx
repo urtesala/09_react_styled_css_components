@@ -28,9 +28,9 @@ const SectionSubtitle = styled.h3`
 
 function SectionTitle(props) {
   return (
-    <Wrap>
-      <Pill>{props.pill}</Pill>
-      <MainSectionTitle>{props.title}</MainSectionTitle>
+    <Wrap left={props.left}>
+      {props.pill && <Pill>{props.pill}</Pill>}
+      <MainSectionTitle color={props.color}>{props.title}</MainSectionTitle>
       <SectionSubtitle>{props.subtitle}</SectionSubtitle>
     </Wrap>
   );

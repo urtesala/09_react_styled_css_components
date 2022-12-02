@@ -1,14 +1,14 @@
+import styled from 'styled-components';
 import {
-  Btn,
+  Button,
   Container,
   Flex,
+  SecondaryButton,
   Section,
-  SecondaryBtn,
-} from './../styled/UI.styled';
-import styled from 'styled-components';
+} from '../styled/UI.styled';
 
 const Wrapper = styled.div`
-  background-color: #333;
+  background-color: #223;
   padding: 62px 98px;
   color: white;
   border-radius: 6px;
@@ -21,10 +21,10 @@ const CtaTitle = styled.h2`
   max-width: 456px;
 `;
 
-const CtaSubttle = styled.p`
+const CtaSubtitle = styled.p`
   font-size: 20px;
-  line-height: 1.5;
   color: #8896ab;
+  line-height: 1.5;
   max-width: 456px;
   margin-bottom: 0;
 `;
@@ -39,13 +39,13 @@ function Cta(props) {
               <CtaTitle>
                 The fastest way from idea to live site. Period.
               </CtaTitle>
-              <CtaSubttle>
+              <CtaSubtitle>
                 Flex is a Small SaaS Business. Flex isn't a traditional company.
-              </CtaSubttle>
+              </CtaSubtitle>
             </div>
             <Flex gap>
-              <Btn>Get&nbsp;Started</Btn>
-              <SecondaryBtn>Learn&nbsp;more</SecondaryBtn>
+              <Button>Get&nbsp;Started</Button>
+              <SecondaryButton>Learn&nbsp;More</SecondaryButton>
             </Flex>
           </Flex>
         </Wrapper>
