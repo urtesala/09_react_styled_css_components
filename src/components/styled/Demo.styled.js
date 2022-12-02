@@ -1,7 +1,7 @@
 // sukuriam h1 elementa pavadinimu title naudodami styled components
 import styled from 'styled-components';
 
-export const Title = styled.h1`
+const Title = styled.h1`
   font-size: 3rem;
   font-weight: normal;
   text-decoration: underline;
@@ -9,7 +9,7 @@ export const Title = styled.h1`
 
 //sukurti button komponenta, prideti jam stiliu ir panaudoti jsx
 
-export const Btn = styled.button`
+const Btn = styled.button`
   font-size: ${(props) => (props.sm ? '1rem' : '1.5rem')};
   padding: 1em 2em;
   border-radius: 20px;
@@ -22,7 +22,7 @@ export const Btn = styled.button`
     background-color: #573535;
   }
 `;
-export const LargeBtn = styled(Btn)`
+const LargeBtn = styled(Btn)`
   padding: 1.5em 2.5em;
   text-transform: uppercase;
 `;
